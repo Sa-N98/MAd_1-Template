@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-## 📑 Table of Contents
+## 📑 Table of Contents >>
 
 * [Git Setup Guide](#git-setup-guide)
 
