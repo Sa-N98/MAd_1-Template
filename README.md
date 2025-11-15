@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-## 📑 Table of Contents >>
+## 📑 Table of Contents
 
 * [Git Setup Guide](#git-setup-guide)
 
@@ -19,9 +19,8 @@
   * [6. Using VS Code](#6-using-vs-code)
 
 ---
-<br><br>
 
-# Git Setup Guide
+# 🧰 Git Setup Guide
 
 ## 1. Configure Git Identity
 
@@ -92,13 +91,11 @@ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-<br><br>
-
-# GitHub Repository Setup
+# 🧰 GitHub Repository Setup
 
 ## 1. Create a GitHub Account
 
-Go to: **[https://github.com](https://github.com)**
+## Go to: **[https://github.com](https://github.com)**
 
 ## 2. Create a New Repository
 
@@ -163,4 +160,5 @@ Then use **VS Code Source Control** to stage and commit.
 *(Add link here later)*
 
 ### Linux / macOS Video
-[![Linux](https://www.youtube.com/watch?v=RtlJ1nqlvFc)
+
+[Linux/macOS VS Code Git Tutorial](https://www.youtube.com/watch?v=RtlJ1nqlvFc)
