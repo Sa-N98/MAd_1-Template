@@ -1,31 +1,29 @@
 # Project Setup Guide
 
-
-
-
-## 📚 Interactive Index
-
 ## 📑 Table of Contents
 
-- [Git Configuration](#git-configuration)
-  - [Configure Git Identity](#1-configure-git-identity)
-  - [Generate SSH Key](#2-generate-ssh-key)
-  - [Start SSH Agent](#3-start-ssh-agent)
-  - [Add SSH Key to Agent](#4-add-ssh-key-to-agent)
-  - [Copy Public Key](#5-copy-public-key)
-- [GitHub Repository Setup](#github-repository-setup)
-  - [Create GitHub Account](#1-create-a-github-account)
-  - [Create New Repository](#2-create-a-new-repository)
-  - [Clone Repository](#3-clone-the-repository)
-  - [Navigate to Repository](#4-navigate-to-repository)
-  - [Commit and Push Changes](#5-commit-and-push-changes)
-  - [Using VS Code](#6-using-vs-code)
+* [Git Setup Guide](#git-setup-guide)
 
+  * [1. Configure Git Identity](#1-configure-git-identity)
+  * [2. Generate SSH Key](#2-generate-ssh-key)
+  * [3. Start SSH Agent](#3-start-ssh-agent)
+  * [4. Add SSH Key to Agent](#4-add-ssh-key-to-agent)
+  * [5. Copy Public Key](#5-copy-public-key)
+* [GitHub Repository Setup](#github-repository-setup)
+
+  * [1. Create GitHub Account](#1-create-a-github-account)
+  * [2. Create New Repository](#2-create-a-new-repository)
+  * [3. Clone Repository](#3-clone-the-repository)
+  * [4. Navigate to Repository](#4-navigate-to-repository)
+  * [5. Commit and Push Changes](#5-commit-and-push-changes)
+  * [6. Using VS Code](#6-using-vs-code)
 
 ---
-<details>
-<summary><h2>🧰 Git Setup Guide</h2></summary>
-## 🚀 1. Configure Git (Run Once)
+<br><br>
+
+# Git Setup Guide
+
+## 1. Configure Git Identity
 
 ```bash
 git config --global user.name "Your Name"
@@ -42,7 +40,7 @@ git config --list
 
 ---
 
-## 🔐 2. Generate SSH Key (Run Once)
+## 2. Generate SSH Key
 
 ```bash
 ssh-keygen -t ed25519 -C "you@example.com"
@@ -55,7 +53,7 @@ ssh-keygen -t ed25519 -C "you@example.com"
 
 ---
 
-## 🚀 3. Start SSH Agent (Run Once)
+## 3. Start SSH Agent
 
 ```bash
 eval "$(ssh-agent -s)"
@@ -63,7 +61,7 @@ eval "$(ssh-agent -s)"
 
 ---
 
-## ➕ 4. Add SSH Key to Agent (Run Once)
+## 4. Add SSH Key to Agent
 
 ```bash
 ssh-add ~/.ssh/id_ed25519
@@ -71,9 +69,9 @@ ssh-add ~/.ssh/id_ed25519
 
 ---
 
-## 📤 5. Copy Public Key (Run Once)
+## 5. Copy Public Key
 
-Paste this key into: **GitHub → Settings → SSH and GPG Keys → New SSH Key**
+Paste into: **GitHub → Settings → SSH and GPG Keys → New SSH Key**
 
 ```bash
 cat ~/.ssh/id_ed25519.pub
@@ -81,42 +79,50 @@ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-</details>
+## Common Git Commands
+
+| Command               | Description             |
+| --------------------- | ----------------------- |
+| `git status`          | Check repository status |
+| `git add <file>`      | Stage file              |
+| `git add .`           | Stage all changes       |
+| `git commit -m "msg"` | Commit changes          |
+| `git push`            | Push to remote          |
+| `git pull`            | Pull latest changes     |
 
 ---
 
-<details>
-<summary><h2>🧰 GitHub Repo Setup Guide</h2></summary>
+<br><br>
 
-## 🌐 1. Create a GitHub Account
+# GitHub Repository Setup
 
-Go to: [**https://github.com**](https://github.com)
+## 1. Create a GitHub Account
 
----
+Go to: **[https://github.com](https://github.com)**
 
-## 📦 2. Create a New GitHub Repository
+## 2. Create a New Repository
 
 1. Go to GitHub Home
-2. Click **New** (or + icon → *New repository*)
+2. Click **New**
 3. Fill details:
 
-   * **Repository name**
-   * Optional **Description**
-   * Choose **Public** or **Private**
+   * Repository name
+   * Optional description
+   * Public/Private
    * **Do NOT** tick “Add README”
-4. Click **Create repository**
+4. Click **Create Repository**
 
 ---
 
-## 📥 3. Clone the Repository (Using SSH)
+## 3. Clone the Repository
 
-Copy the SSH URL:
+Copy SSH URL:
 
 ```
 git@github.com:username/repo-name.git
 ```
 
-Clone it:
+Clone:
 
 ```bash
 git clone git@github.com:username/repo-name.git
@@ -124,7 +130,7 @@ git clone git@github.com:username/repo-name.git
 
 ---
 
-## 📂 4. Enter the Repo Folder
+## 4. Navigate to Repository
 
 ```bash
 cd repo-name
@@ -132,7 +138,7 @@ cd repo-name
 
 ---
 
-## 📤 5. Add, Commit, Push (Optional)
+## 5. Commit and Push Changes
 
 ```bash
 git add .
@@ -142,22 +148,20 @@ git push
 
 ---
 
-## 🖥️ 6. Alternate Way to Step 5 (Using VS Code)
+## 6. Using VS Code
 
-Repo folder → **Open In  Terminal Here** → Run:
+Open repo folder in terminal → run:
 
 ```bash
 code .
 ```
 
-Then use **VS Code Source Control UI** to stage and commit.
+Then use **VS Code Source Control** to stage and commit.
 
-### 🎥 Watch the videos below to see how to manage commits in VS Code.
+### Windows Video
 
----
+*(Add link here later)*
 
-### 🪟 Windows
+### Linux / macOS Video
 
-### 🐧 Linux / 🍎 macOS
-
-</details>
+*(Add link here later)*
