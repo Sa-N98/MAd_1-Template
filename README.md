@@ -17,6 +17,7 @@
   * [4. Navigate to Repository](#4-navigate-to-repository)
   * [5. Commit and Push Changes](#5-commit-and-push-changes)
   * [6. Using VS Code](#6-using-vs-code)
+* [Python Virtual Environment Setup](#python-virtual-environment-setup)
 
 ---
 
@@ -95,7 +96,9 @@ cat ~/.ssh/id_ed25519.pub
 
 ## 1. Create a GitHub Account
 
-## Go to: **[https://github.com](https://github.com)**
+Go to: **[https://github.com](https://github.com)**
+
+---
 
 ## 2. Create a New Repository
 
@@ -159,6 +162,96 @@ Then use **VS Code Source Control** to stage and commit.
 
 *(Add link here later)*
 
-### Linux / macOS Video
+### Linux / macOS Video: [Linux/macOS VS Code Git Tutorial](https://www.youtube.com/watch?v=RtlJ1nqlvFc)
 
-[Linux/macOS VS Code Git Tutorial](https://www.youtube.com/watch?v=RtlJ1nqlvFc)
+---
+
+# 🧰 Python Virtual Environment Setup
+
+## 1. Check if Python Is Installed
+
+```bash
+python --version
+```
+
+or
+
+```bash
+python3 --version
+```
+
+You should see something like:
+
+```
+Python 3.x.x
+```
+
+---
+
+## 2. Check if pip Is Installed
+
+```bash
+pip --version
+```
+
+or
+
+```bash
+pip3 --version
+```
+
+---
+
+## 3. Create a Virtual Environment Inside Your Project
+
+```bash
+python3 -m venv venv
+```
+
+or
+
+```bash
+python -m venv venv
+```
+
+---
+
+## 4. Activate the Virtual Environment
+
+### macOS / Linux
+
+```bash
+source venv/bin/activate
+```
+
+### Windows (PowerShell)
+
+```bash
+venv\Scripts\activate
+```
+
+After activation, you should see something like:
+
+```
+(venv) $
+```
+
+---
+
+## 5. Install Dependencies
+
+```bash
+pip install flask
+```
+#### Note: add dependency name to requirements.txt
+
+---
+
+## 6. Add venv to .gitignore
+
+```
+venv/
+__pycache__/
+```
+#### Note: Create .gitignore file if not there 
+---
