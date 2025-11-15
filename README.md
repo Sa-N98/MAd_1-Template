@@ -163,5 +163,4 @@ Then use **VS Code Source Control** to stage and commit.
 *(Add link here later)*
 
 ### Linux / macOS Video
-
-*(Add link here later)*
+[![Linux](https://www.youtube.com/watch?v=RtlJ1nqlvFc)
