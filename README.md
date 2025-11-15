@@ -21,7 +21,7 @@
 
 ---
 
-# 🧰 Git Setup Guide
+# Git Setup Guide
 
 ## 1. Configure Git Identity
 
@@ -92,7 +92,7 @@ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-# 🧰 GitHub Repository Setup
+# GitHub Repository Setup
 
 ## 1. Create a GitHub Account
 
@@ -166,7 +166,7 @@ Then use **VS Code Source Control** to stage and commit.
 
 ---
 
-# 🧰 Python Virtual Environment Setup
+# Python Virtual Environment Setup
 
 ## 1. Check if Python Is Installed
 
