@@ -1,23 +1,30 @@
 # Project Setup Guide
 
+
+
+
 ## 📚 Interactive Index
 
-* [🚀 1. Configure Git](#-1-configure-git-run-once)
-* [🔐 2. Generate SSH Key](#-2-generate-ssh-key-run-once)
-* [🚀 3. Start SSH Agent](#-3-start-ssh-agent-run-once)
-* [➕ 4. Add SSH Key to Agent](#-4-add-ssh-key-to-agent-run-once)
-* [📤 5. Copy Public Key](#-5-copy-public-key-run-once)
-* [🧰 GitHub Repo Setup Guide](#-github-repo-setup-guide)
+## 📑 Table of Contents
 
-  * [🌐 Create a GitHub Account](#-1-create-a-github-account)
-  * [📦 Create a New GitHub Repository](#-2-create-a-new-github-repository)
-  * [📥 Clone the Repository](#-3-clone-the-repository-using-ssh)
-  * [📂 Enter the Repo Folder](#-4-enter-the-repo-folder)
-  * [📤 Add Commit Push](#-5-add-commit-push-optional)
-  * [🖥️ VS Code Method](#-6-alternate-way-to-step-5-using-vs-code)
+- [Git Configuration](#git-configuration)
+  - [Configure Git Identity](#1-configure-git-identity)
+  - [Generate SSH Key](#2-generate-ssh-key)
+  - [Start SSH Agent](#3-start-ssh-agent)
+  - [Add SSH Key to Agent](#4-add-ssh-key-to-agent)
+  - [Copy Public Key](#5-copy-public-key)
+- [GitHub Repository Setup](#github-repository-setup)
+  - [Create GitHub Account](#1-create-a-github-account)
+  - [Create New Repository](#2-create-a-new-repository)
+  - [Clone Repository](#3-clone-the-repository)
+  - [Navigate to Repository](#4-navigate-to-repository)
+  - [Commit and Push Changes](#5-commit-and-push-changes)
+  - [Using VS Code](#6-using-vs-code)
+
 
 ---
-
+<details>
+<summary><h2>🧰 Git Setup Guide</h2></summary>
 ## 🚀 1. Configure Git (Run Once)
 
 ```bash
@@ -74,7 +81,12 @@ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-# 🧰 GitHub Repo Setup Guide
+</details>
+
+---
+
+<details>
+<summary><h2>🧰 GitHub Repo Setup Guide</h2></summary>
 
 ## 🌐 1. Create a GitHub Account
 
@@ -147,3 +159,5 @@ Then use **VS Code Source Control UI** to stage and commit.
 ### 🪟 Windows
 
 ### 🐧 Linux / 🍎 macOS
+
+</details>
